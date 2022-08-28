@@ -9,7 +9,8 @@ public class SimplePizzaFactory
 			pizza = new CheesePizza();
 		else if(type.equals("clam"))
 			pizza = new ClamPizza();
-			
+		else
+			pizza = new PlainPizza();
 		return pizza;
 	}
 }
