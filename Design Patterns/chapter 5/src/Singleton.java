@@ -7,7 +7,11 @@ public class Singleton
 	private Singleton() {}
 	
 	//make the static method, only it can instantiate 
-	public static Singleton getInstance()
+	//IMPORTANT NOTE:
+	//by adding the synchronized keyword to the getInstance(), we force every thread to 
+	//wait its turn before it can enter the method.
+	//After doing that, no two threads may enter the method at the same time.
+	public static synchronized Singleton getInstance()
 	{
 		//the statement to ensure that it's only one instance
 		if(uniqueInstance == null)
