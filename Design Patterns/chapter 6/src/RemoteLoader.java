@@ -55,6 +55,7 @@ public class RemoteLoader
 		remoteControl.offButtonWasPushed(0);
 		//undo the last action:
 		remoteControl.undoButtonWasPushed();
+		
 //////////////////////////////////////////////////////////////////////
 		
 		//set the value of it to high:
@@ -74,6 +75,9 @@ public class RemoteLoader
 		remoteControl.onButtonWasPushed(3);
 		remoteControl.offButtonWasPushed(3);
 		
+		//NOTE:
+		//We can simplify our code by using the lamnda expressions and 
+		//for more simplification, we can use the methods references.
 		
 	}
 }
