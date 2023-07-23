@@ -76,7 +76,7 @@ public class RemoteLoader
 		remoteControl.offButtonWasPushed(3);
 		
 		//NOTE:
-		//We can simplify our code by using the lamnda expressions and 
+		//We can simplify our code by using the lambda expressions and 
 		//for more simplification, we can use the methods references.
 		
 	}
