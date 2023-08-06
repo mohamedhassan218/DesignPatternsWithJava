@@ -1,5 +1,5 @@
 public abstract class CaffineBeverage {
-	
+	// Declare the method as 'final' to prevent the subclasses from changing the template method.
 	final void prepareReciepe() {
 		boilWater();
 		brew();
