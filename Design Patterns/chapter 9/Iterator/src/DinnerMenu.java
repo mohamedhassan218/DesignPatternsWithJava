@@ -28,10 +28,12 @@ public class DinnerMenu implements Menu{
 		}
 	}
 	
+	// Returns the array that holds the items of the menu.
 	public MenuItem[] getMenuItems() {
 		return menuItems;
 	}
 	
+	// Returns new Iterator that could iterate over an array due to our implementation of DinnerMenuIterator class.
 	public Iterator<MenuItem> createIterator(){
 		return new DinnerMenuIterator(menuItems);
 	}
